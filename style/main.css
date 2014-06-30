@@ -2,8 +2,8 @@
 html, body {
   margin: 0;
   padding: 0;
-  background: #faf8ef;
-  color: #776e65;
+  background: #414240;
+  color: #B4CEBC;
   font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
   font-size: 18px; }
 
@@ -53,14 +53,14 @@ h1.title {
 .score-container, .best-container {
   position: relative;
   display: inline-block;
-  background: #bbada0;
-  padding: 15px 25px;
+  background: #B4CEBC;;
+  padding: 15px 42px;
   font-size: 25px;
   height: 25px;
   line-height: 47px;
   font-weight: bold;
   border-radius: 3px;
-  color: white;
+  color: black;
   margin-top: 8px;
   text-align: center; }
   .score-container:after, .best-container:after {
@@ -71,8 +71,7 @@ h1.title {
     text-transform: uppercase;
     font-size: 13px;
     line-height: 13px;
-    text-align: center;
-    color: #eee4da; }
+    text-align: center }
   .score-container .score-addition, .best-container .score-addition {
     position: absolute;
     right: 30px;
@@ -90,10 +89,10 @@ h1.title {
     animation-fill-mode: both; }
 
 .score-container:after {
-  content: "Score"; }
+  content: "Marcador"; }
 
 .best-container:after {
-  content: "Best"; }
+  content: "Mejor"; }
 
 p {
   margin-top: 0;
@@ -149,7 +148,7 @@ hr {
   -ms-user-select: none;
   -ms-touch-action: none;
   touch-action: none;
-  background: #bbada0;
+  background: #8BA292;
   border-radius: 6px;
   width: 500px;
   height: 500px;
@@ -164,6 +163,7 @@ hr {
     bottom: 0;
     left: 0;
     background: rgba(238, 228, 218, 0.5);
+	color: black;
     z-index: 100;
     text-align: center;
     -webkit-animation: fade-in 800ms ease 1200ms;
@@ -183,19 +183,18 @@ hr {
       margin-top: 59px; }
     .game-container .game-message a {
       display: inline-block;
-      background: #8f7a66;
+      background: black;
+	  color: white;
       border-radius: 3px;
       padding: 0 20px;
       text-decoration: none;
-      color: #f9f6f2;
       height: 40px;
       line-height: 42px;
       margin-left: 9px; }
       .game-container .game-message a.keep-playing-button {
         display: none; }
     .game-container .game-message.game-won {
-      background: rgba(237, 194, 46, 0.5);
-      color: #f9f6f2; }
+      background: rgba(237, 194, 46, 0.5); }
       .game-container .game-message.game-won a.keep-playing-button {
         display: inline-block; }
     .game-container .game-message.game-won, .game-container .game-message.game-over {
@@ -309,67 +308,42 @@ hr {
     border-radius: 3px;
     background: #eee4da;
     text-align: center;
-    font-weight: bold;
+    font-weight: normal;
     z-index: 10;
-    font-size: 55px; }
+    font-size: 5px; }
   .tile.tile-2 .tile-inner {
-    background: #eee4da;
-    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); }
+	background: url("../julio/imagenes/dos.jpg");
+	background-size: 100%}
   .tile.tile-4 .tile-inner {
-    background: #ede0c8;
-    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); }
+	background: url("../julio/imagenes/cuatro.jpg");
+	background-size: 100%}
   .tile.tile-8 .tile-inner {
-    color: #f9f6f2;
-    background: #f2b179; }
+	background: url("../julio/imagenes/ocho.jpg");
+	background-size: 100%}
   .tile.tile-16 .tile-inner {
-    color: #f9f6f2;
-    background: #f59563; }
+	background: url("../julio/imagenes/diesciseis.jpg");
+	background-size: 100%}
   .tile.tile-32 .tile-inner {
-    color: #f9f6f2;
-    background: #f67c5f; }
+	background: url("../julio/imagenes/treintaydos.jpg");
+	background-size: 100%}
   .tile.tile-64 .tile-inner {
-    color: #f9f6f2;
-    background: #f65e3b; }
+	background: url("../julio/imagenes/sesentaycuatro.jpg");
+	background-size: 100%}
   .tile.tile-128 .tile-inner {
-    color: #f9f6f2;
-    background: #edcf72;
-    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.2381), inset 0 0 0 1px rgba(255, 255, 255, 0.14286);
-    font-size: 45px; }
-    @media screen and (max-width: 520px) {
-      .tile.tile-128 .tile-inner {
-        font-size: 25px; } }
+  	background: url("../julio/imagenes/cientoveintiocho.jpg");
+  	background-size: 100%}
   .tile.tile-256 .tile-inner {
-    color: #f9f6f2;
-    background: #edcc61;
-    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.31746), inset 0 0 0 1px rgba(255, 255, 255, 0.19048);
-    font-size: 45px; }
-    @media screen and (max-width: 520px) {
-      .tile.tile-256 .tile-inner {
-        font-size: 25px; } }
+    background: url("../julio/imagenes/doscientoscincuentayseis.jpg");
+    background-size: 100%}
   .tile.tile-512 .tile-inner {
-    color: #f9f6f2;
-    background: #edc850;
-    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.39683), inset 0 0 0 1px rgba(255, 255, 255, 0.2381);
-    font-size: 45px; }
-    @media screen and (max-width: 520px) {
-      .tile.tile-512 .tile-inner {
-        font-size: 25px; } }
+    background: url("../julio/imagenes/quinientosdoce.jpg");
+    background-size: 100%}
   .tile.tile-1024 .tile-inner {
-    color: #f9f6f2;
-    background: #edc53f;
-    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.47619), inset 0 0 0 1px rgba(255, 255, 255, 0.28571);
-    font-size: 35px; }
-    @media screen and (max-width: 520px) {
-      .tile.tile-1024 .tile-inner {
-        font-size: 15px; } }
+    background: url("../julio/imagenes/milveinticuatro.jpg");
+    background-size: 100%}
   .tile.tile-2048 .tile-inner {
-    color: #f9f6f2;
-    background: #edc22e;
-    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.55556), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
-    font-size: 35px; }
-    @media screen and (max-width: 520px) {
-      .tile.tile-2048 .tile-inner {
-        font-size: 15px; } }
+	background: url("../julio/imagenes/dosmilcuarentayocho.jpg");
+	background-size: 100%}
   .tile.tile-super .tile-inner {
     color: #f9f6f2;
     background: #3c3a32;
@@ -488,11 +462,11 @@ hr {
 
 .restart-button {
   display: inline-block;
-  background: #8f7a66;
+  background: #B4CEBC;
   border-radius: 3px;
   padding: 0 20px;
   text-decoration: none;
-  color: #f9f6f2;
+  color: black;
   height: 40px;
   line-height: 42px;
   display: block;
@@ -520,8 +494,8 @@ hr {
 
   .score-container, .best-container {
     margin-top: 0;
-    padding: 15px 10px;
-    min-width: 40px; }
+    padding: 5px 10px;
+    min-width: 200px; }
 
   .heading {
     margin-bottom: 10px; }
@@ -589,15 +563,13 @@ hr {
         border-radius: 3px;
         padding: 0 20px;
         text-decoration: none;
-        color: #f9f6f2;
         height: 40px;
         line-height: 42px;
         margin-left: 9px; }
         .game-container .game-message a.keep-playing-button {
           display: none; }
       .game-container .game-message.game-won {
-        background: rgba(237, 194, 46, 0.5);
-        color: #f9f6f2; }
+        background: rgba(237, 194, 46, 0.5)}
         .game-container .game-message.game-won a.keep-playing-button {
           display: inline-block; }
       .game-container .game-message.game-won, .game-container .game-message.game-over {
